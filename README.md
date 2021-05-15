@@ -8,9 +8,7 @@ We took the google calendar API to complement our app and we want expand it to m
 <ul>
 <h2>Made by:</h2>
 <dd><li type="circle">Pere Conte Pallarès</li></dd>
-
-  
-**- Pere Conte**   
-**- Víctor Asenjo**  
-**- Miquel Umbert**  
-**- Adrian Cristian** 
+<dd><li type="circle">Víctor Asenjo Carvajal</li></dd>
+<dd><li type="circle">Miquel Umbert Bosch</li></dd>
+<dd><li type="circle">Adrian Cristian Crisan</li></dd>
+</ul>
