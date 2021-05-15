@@ -44,6 +44,9 @@ def bootDiscord():
 # List of dictionaries with the above structure
 birthdays = []
 
+global displayName
+displayName = None
+
 
 def getService():
         """Shows basic usage of the Google Calendar API.
@@ -146,8 +149,15 @@ def printEvent(event):
         print('\t No se puede enviar el mensaje porque no hay invitado \n')
 
 
+def getDisplayName(event):
+    global displayName
+    displayName = event['creator'].get('displayName', event['creator']['email'])
+
 # Add birthay to birthdays list
 def addBirthday(event):
+    if not displayName:
+        getDisplayName(event)
+
     honored = getHonored(event)
     summary = getSummary(event)
     if honored is not None:
@@ -205,8 +215,8 @@ def getBirthdays():
 
 # Sends a Discord message
 def sendMessage(honored, message):
-    global disc
-    disc.enviarMSG(honored, honored, message)
+    global disc, displayName
+    disc.enviarMSG(displayName, honored, message)
 
 def main():
     filterBirthdays(getService())
