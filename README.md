@@ -7,10 +7,10 @@ We took the google calendar API to complement our app and we want expand it to m
 <dl>
 <ul>
 <h2>Made by:</h2>
-<dd><a href="https://github.com/PereCP"><li type="circle"><i>Pere Conte Pallarès</i></li></a></dd>
-<dd><a href="https://github.com/victorasenjo22"><li type="circle"><i>Víctor Asenjo Carvajal</i></li></dd>
-<dd><a href="https://github.com/mumbert4"><li type="circle"><i>Miquel Umbert Bosch</i></li></dd>
-<dd><a href="https://github.com/AdriCri22/"><li type="circle"><i>Adrian Cristian Crisan</i></li></dd>
+<a href="https://github.com/PereCP"><li type="circle"><i>Pere Conte Pallarès</i></li></a>
+<a href="https://github.com/victorasenjo22"><li type="circle"><i>Víctor Asenjo Carvajal</i></li>
+<a href="https://github.com/mumbert4"><li type="circle"><i>Miquel Umbert Bosch</i></li></dd>
+<a href="https://github.com/AdriCri22/"><li type="circle"><i>Adrian Cristian Crisan</i></li>
 </ul>
 </dl>
 </p>
