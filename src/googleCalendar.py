@@ -148,7 +148,7 @@ def printEvent(event):
     else:
         print('\t No se puede enviar el mensaje porque no hay invitado \n')
 
-
+# Gets the display name of the creator of an event
 def getDisplayName(event):
     global displayName
     displayName = event['creator'].get('displayName', event['creator']['email'])
