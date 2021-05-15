@@ -33,9 +33,57 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">Code information</h1>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
-						</div>
+<code>
+	import schedule
+	import sched
+	import time
+	import queue
+	import datetime
+	import struct
+	import googleCalendar
+	
+	
+	# lista de cumples
+	
+	# cumpleaños_persona[
+	#         cumple{
+	#             'summary': string
+	#             'date': datetime
+	#             'homored': string
+	#             'message': string
+	#         }
+	# ]
+	today = datetime.date.today()
+	def iterar():
+		i=0
+		birthdays=googleCalendar.getBirthdays()
+		if len(birthdays)!=0:
+			date= birthdays[i]['date']
+			while date.day == today.day and date.month==today.month:
+				honored=birthdays[i]['honored']
+				mensaje=birthdays[i]['message']
+				googleCalendar.sendMessage(honored, mensaje)
+				i=i+1
+				date = birthdays[i]['date']
+		else :
+			print("No hay cumpleaños")
+		# print(date)
+		
+	
+	
+	# def obtener_fechas():
+	# def jobs():
+	   # print(all_jobs)
+	
+	
+	schedule.every(30).seconds.do(iterar)
+	schedule.every().day.at("13:48").do(iterar)
+	# all_jobs=schedule.get_jobs()
+	while True:
+		 schedule.run_pending()
+		 time.sleep(1)
+</code>
+</div>
 					</section>
 
 			</div>
