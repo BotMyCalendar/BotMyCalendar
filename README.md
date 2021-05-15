@@ -4,7 +4,7 @@
 
 We took the google calendar API to complement our app and we want expand it to more fields such as discord, telegram and also whatsapp!
 
-<p style="font-size:2">
+<p style="font-size:2px">
 <h2>Made by:</h2>
 <a href="https://github.com/PereCP"><li type="circle"><i>Pere Conte Pallarès</i></li></a>
 <a href="https://github.com/victorasenjo22"><li type="circle"><i>Víctor Asenjo Carvajal</i></li>
