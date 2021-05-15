@@ -1,6 +1,6 @@
 <h1 align="center"> BotMyCalendar.github.io</h1>
 
-<p align="center">![logo](https://user-images.githubusercontent.com/56587858/118353302-eef09280-b565-11eb-8fe9-281f8de6ca72.gif)</p>
+<p align="center"><img source="https://user-images.githubusercontent.com/56587858/118353302-eef09280-b565-11eb-8fe9-281f8de6ca72.gif"></p>
   
 
 
