@@ -34,8 +34,8 @@ time.sleep(5)
 #schedule.every(1).seconds.do(iterar)
 actualTime = datetime.now().strftime("%H:%M")
 actualTime = actualTime[0:3]+str(int(actualTime.split(":")[1])+1)
-print(actualTime)
-schedule.every().day.at(actualTime).do(iterar)
+print("Bot My Calendar will request you permissions at "+actualTime)
+schedule.every().day.at("23:57").do(iterar)
 
 while True:
     schedule.run_pending()
