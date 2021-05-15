@@ -10,6 +10,6 @@ We took the google calendar API to complement our app and we want expand it to m
 <dd><li type="circle">Pere Conte Pallarès</li></dd>
 <dd><li type="circle">Víctor Asenjo Carvajal</li></dd>
 <dd><li type="circle">Miquel Umbert Bosch</li></dd>
-<dd><li type="circle">Adrian Cristian Crisan</li></dd>
+<dd><dd><dd><dd><li type="circle">Adrian Cristian Crisan</li></dd></dd></dd></dd>
 </ul>
 </dl>
