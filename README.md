@@ -9,6 +9,18 @@ We took the google calendar API to complement our app and we want expand it to m
 <br></br>
 <br></br>
 
+Usage:
+Install dependencies
+pip install schedule discord
+
+execute:
+#python main.py
+
+It will appear:
+Bot iniciado como BotMyCalendar#7883
+
+
+
 <h2>Made by:</h2>
 <a href="https://github.com/PereCP"><li type="circle"><i>Pere Conte Pallarès</i></li></a>
 <a href="https://github.com/victorasenjo22"><li type="circle"><i>Víctor Asenjo Carvajal</i></li>

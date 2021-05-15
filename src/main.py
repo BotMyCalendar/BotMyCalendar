@@ -2,10 +2,9 @@ import schedule
 import sched
 import time
 import queue
-import datetime
+from datetime import datetime
 import struct
 import googleCalendar
-
 
 # lista de cumples
 
@@ -33,7 +32,10 @@ googleCalendar.bootDiscord()
 time.sleep(5)
 
 #schedule.every(1).seconds.do(iterar)
-schedule.every().day.at("22:29").do(iterar)
+actualTime = datetime.now().strftime("%H:%M")
+actualTime = actualTime[0:3]+str(int(actualTime.split(":")[1])+1)
+print(actualTime)
+schedule.every().day.at(actualTime).do(iterar)
 
 while True:
     schedule.run_pending()
