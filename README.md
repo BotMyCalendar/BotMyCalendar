@@ -5,9 +5,11 @@
 We took the google calendar API to complement our app and we want expand it to more fields such as discord, telegram and also whatsapp!
 
 
+<ul>
+<h2>Made by:</h2>
+<li type="circle">Pere Conte Pallarès</li>
 
-
-**Made by:**  
+  
 **- Pere Conte**   
 **- Víctor Asenjo**  
 **- Miquel Umbert**  
