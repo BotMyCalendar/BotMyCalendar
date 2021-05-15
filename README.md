@@ -7,7 +7,7 @@ We took the google calendar API to complement our app and we want expand it to m
 
 <ul>
 <h2>Made by:</h2>
-<li type="circle">Pere Conte Pallarès</li>
+<dd><li type="circle">Pere Conte Pallarès</li></dd>
 
   
 **- Pere Conte**   
