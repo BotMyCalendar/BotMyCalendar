@@ -4,7 +4,7 @@
 
 We took the google calendar API to complement our app and we want expand it to more fields such as discord, telegram and also whatsapp!
 
-
+<dl>
 <ul>
 <h2>Made by:</h2>
 <dd><li type="circle">Pere Conte Pallarès</li></dd>
@@ -12,3 +12,4 @@ We took the google calendar API to complement our app and we want expand it to m
 <dd><li type="circle">Miquel Umbert Bosch</li></dd>
 <dd><li type="circle">Adrian Cristian Crisan</li></dd>
 </ul>
+</dl>
