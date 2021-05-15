@@ -33,7 +33,7 @@ googleCalendar.bootDiscord()
 time.sleep(5)
 
 #schedule.every(1).seconds.do(iterar)
-schedule.every().day.at("22:17").do(iterar)
+schedule.every().day.at("22:29").do(iterar)
 
 while True:
     schedule.run_pending()
