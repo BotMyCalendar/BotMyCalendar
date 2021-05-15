@@ -7,7 +7,7 @@ We took the google calendar API to complement our app and we want expand it to m
 <dl>
 <ul>
 <h2>Made by:</h2>
-<dd><a href="https://github.com/victorasenjo22" class="icon brands fa-github"> <li type="circle">Pere Conte Pallarès</li></a></dd>
+<dd><a href="https://github.com/victorasenjo22" class="icon brands fa-github"><span class="label">GitHub</span> <li type="circle">Pere Conte Pallarès</li></a></dd>
 <dd><li type="circle">Víctor Asenjo Carvajal</li></dd>
 <dd><li type="circle">Miquel Umbert Bosch</li></dd>
 <dd><li type="circle">Adrian Cristian Crisan</li></dd>
