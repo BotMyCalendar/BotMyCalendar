@@ -14,11 +14,11 @@ We took the google calendar API to complement our app and we want expand it to m
 
 
 
-**Made by**  
-**Pere Conte**   
-**Victor Asenjo**  
-**Miquel Umbert**  
-**Adrian Cristian** 
+**Made by:**  
+**-Pere Conte**   
+**-Victor Asenjo**  
+**-Miquel Umbert**  
+**-Adrian Cristian** 
 
 
 
