@@ -40,6 +40,9 @@ def iterar():
    # print(all_jobs)
 
 
+googleCalendar.bootDiscord()
+time.sleep(5)
+
 schedule.every(30).seconds.do(iterar)
 schedule.every().day.at("13:48").do(iterar)
 # all_jobs=schedule.get_jobs()

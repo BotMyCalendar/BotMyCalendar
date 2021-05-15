@@ -6,12 +6,32 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 
+from signal import signal, SIGINT
+from sys import exit
+import threading
+
+from discordb import MyDiscord
+import asyncio
+from time import sleep
+
 # If modifying these scopes, delete the file token.json.
 SCOPES = ['https://www.googleapis.com/auth/calendar.readonly']
 
 # Credentials of the Google Calendar API
-CREDENTIALS = 'client_secret_86948875682-nr2iom0sqoitul0bp94rjov5cmn093ci.apps.googleusercontent.com.json'
+CREDENTIALS = 'secret.json'
+DISCORD_TOKEN = open('disctoken.txt').read()
 
+global disc
+disc = None
+
+def discProc():
+    global disc
+    disc = MyDiscord()
+    disc.run(DISCORD_TOKEN)
+
+def bootDiscord():
+    th = threading.Thread(target=discProc)
+    th.start()
 
 # cumples [
 #     cumples {
@@ -180,16 +200,10 @@ def getBirthdays():
     return birthdays
 
 
-# Sends a message
+# Sends a Discord message
 def sendMessage(honored, message):
-    if message is None:
-        message = 'Wish you have a nice day!'
-
-    print(honored)
-    print(message, '\n')
-
-    # Llama a una función que envia el mensaje
-
+    global disc
+    disc.enviarMSG(honored, honored, message)
 
 def main():
     filterBirthdays(getService())
