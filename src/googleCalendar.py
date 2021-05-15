@@ -172,11 +172,14 @@ def addBirthday(event):
 # Filter the events of the user to get the birthday events
 def filterBirthdays(service):
     now = datetime.datetime.utcnow().isoformat() + 'Z' # 'Z' indicates UTC time
+    tomorrow = (datetime.datetime.today()).date()
+    tomorrow = datetime.datetime.combine(tomorrow, datetime.datetime.max.time())
+    tomorrow = tomorrow.isoformat() + 'Z'
     next_t = None
     events = []
 
     while next_t != '-1':
-        events_result = service.events().list(calendarId='primary', timeMin=now,
+        events_result = service.events().list(calendarId='primary', timeMin=now, timeMax=tomorrow,
                                         maxResults=2000, singleEvents=True,
                                         orderBy='startTime', pageToken=next_t).execute()
         events += events_result.get('items', [])

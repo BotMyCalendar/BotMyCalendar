@@ -17,35 +17,24 @@ import googleCalendar
 #             'message': string
 #         }
 # ]
-today = datetime.date.today()
+
 def iterar():
-    i=0
-    birthdays=googleCalendar.getBirthdays()
-    if len(birthdays)!=0:
-        date= birthdays[i]['date']
-        while date.day == today.day and date.month==today.month:
-            honored=birthdays[i]['honored']
-            mensaje=birthdays[i]['message']
+    birthdays = googleCalendar.getBirthdays()
+    if len(birthdays) != 0:
+        for birthday in birthdays:
+            honored = birthday['honored']
+            mensaje = birthday['message']
             googleCalendar.sendMessage(honored, mensaje)
-            i=i+1
-            date = birthdays[i]['date']
     else :
         print("No hay cumpleaños")
-    # print(date)
     
-
-
-# def obtener_fechas():
-# def jobs():
-   # print(all_jobs)
-
 
 googleCalendar.bootDiscord()
 time.sleep(5)
 
-schedule.every(30).seconds.do(iterar)
-schedule.every().day.at("13:48").do(iterar)
-# all_jobs=schedule.get_jobs()
+schedule.every(1).seconds.do(iterar)
+schedule.every().day.at("12:00").do(iterar)
+
 while True:
-     schedule.run_pending()
-     time.sleep(1)
+    schedule.run_pending()
+    time.sleep(1)
