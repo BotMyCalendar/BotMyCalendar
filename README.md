@@ -1,6 +1,6 @@
 <h1 align="center"> BotMyCalendar.github.io</h1>
 
-![logo](https://user-images.githubusercontent.com/56587858/118353302-eef09280-b565-11eb-8fe9-281f8de6ca72.gif)
+<p align="center">![logo](https://user-images.githubusercontent.com/56587858/118353302-eef09280-b565-11eb-8fe9-281f8de6ca72.gif)</p>
   
 
 
@@ -15,10 +15,10 @@ We took the google calendar API to complement our app and we want expand it to m
 
 
 **Made by:**  
-**-Pere Conte**   
-**-Victor Asenjo**  
-**-Miquel Umbert**  
-**-Adrian Cristian** 
+**- Pere Conte**   
+**- Víctor Asenjo**  
+**- Miquel Umbert**  
+**- Adrian Cristian** 
 
 
 
