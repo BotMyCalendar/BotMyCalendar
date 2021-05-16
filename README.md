@@ -8,7 +8,7 @@ We took the google calendar API to complement our app and we want expand it to m
 
 <br></br>
 <br></br>
-
+<br></br>
 
 # Usage:
 - Install dependencies
