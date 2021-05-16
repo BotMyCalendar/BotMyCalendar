@@ -37,8 +37,8 @@ _Supported social network messages: Discord_
 We built the bot using pyhton and some APIs as GoogleCalendarAPI...
 
 ## Challenges we ran into
-IThinkUPC Challenge
-UPC Challenge
+- _IThinkUPC Challenge_
+- _UPC Challenge_
 
 ## What we learned
 We have learned a **LOT**!!! This inmersive project has been a change in our way of thinking and facing challenges. We made team and we worked to a common goal. It has been awesome.
